@@ -2,15 +2,15 @@
 <html>
 <head>
 	<title>Write</title>
-	<script type="text/javascript"></script>
-	<link rel="stylesheet" type="text/css" href="write.css">
+	<script type="text/javascript" src="../js/write.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/write.css">
 </head>
 <body>
 	<div id="page-wrapper">
 		<!--고정 헤더-->
 		<header id="main-header">
 			<hgroup>			
-				<h1 align="center"class="master-title">MINTiZ</h1>
+				<h1 align="center" class="master-title">MINTiZ</h1>
 		    </hgroup>
 		</header>
 	</div>
@@ -26,15 +26,15 @@
 		</div>
 		<hr>
 
-		<form>
+		<form name="articles" method="POST">
 			<section id="tag-section">
-				<select name='basetags'>
+				<select id='basetags' onchange="addPostscriptTag()">
   					<option value='' selected>-- 선택 --</option>
   					<option value='daily'>일상</option>
   					<option value='postscript'>맛집 후기</option>
 				</select>
 
-				<section id="postscripttag-section">
+				<div id="postscript-tag" style="display:none">
 					<select name='area'>
 	  					<option value='' selected>-- 지역 선택 --</option>
   						<option value='Seoul'>서울</option>
@@ -56,11 +56,11 @@
   						<option value='Jeju'>제주</option>
 					</select>
 
-					<div class="i-recommend" float:right;>
-						<button class="btn" id="btn" type="submit"><img class="btn-img" src="icon-recommended.png" width='30' height='30'></button>
+					<div class="i-recommend">
+						<button class="btn" id="btn" type="submit"><img class="btn-img" src="icon-recommended.png" width='20' height='20'></button>
 						<span>추천</span>
 					</div>
-				</section>
+				</div>
 			</section>
 			
 			<br>
