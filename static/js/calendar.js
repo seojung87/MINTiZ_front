@@ -28,8 +28,8 @@ function build()
     }
     else if(today.getMonth()+1==1) //  1월 일 때
     {
-    before.innerHTML="12월";
-    next.innerHTML=(today.getMonth()+2)+"월";
+        before.innerHTML="12월";
+        next.innerHTML=(today.getMonth()+2)+"월";
     }
     else //   12월 일 때
     {
@@ -39,7 +39,7 @@ function build()
     
    
     // 남은 테이블 줄 삭제
-    while (tbcal.rows.length > 2) 
+    while (tbcal.rows.length > 1) 
     {
         tbcal.deleteRow(tbcal.rows.length - 1);
     }
