@@ -57,11 +57,17 @@
 					</select>
 
 					<div class="i-recommend">
-						<button class="btn" id="btn" type="submit"><img class="btn-img" src="icon-recommended.png" width='20' height='20'></button>
+						<button class="btn" id="btn" type="submit"><img class="btn-img" src="../image/icon-recommended.png" width='20' height='20'></button>
 						<span>추천</span>
 					</div>
 				</div>
 			</section>
+			<div class="button">
+				<label for="chooseImg">
+					<img class="addImg" src="../image/addPicture.png" width='80' height='80'>
+				</label>
+			</div>
+			<input type="file" id="chooseImg" name="chooseImg" accept="image/*" onchange="loadFile(this)">
 			
 			<br>
 			<textarea class="textbox" placeholder="내용을 입력해주세요" cols='120' rows='20' style="resize: none;"></textarea>

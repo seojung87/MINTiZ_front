@@ -1,0 +1,31 @@
+:root{
+	--mintiz-mint: #BDE4DC;
+	--mintiz-brown: #817171;
+}
+
+*{
+    font-family: 'Hi Melody', cursive;
+}
+
+body{
+	width:600px; margin:0 auto;
+	background:var(--mintiz-mint);
+}
+
+.content{
+    text-align: center;
+	overflow:hidden;
+	background:white;
+	margin:20px 0; padding: 20px 20px;
+	border-radius:5px;
+	box-shadow:0 2px 6px rgba(100, 100, 100, 0.3);
+}
+
+h1{
+    font-size: 30px;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}

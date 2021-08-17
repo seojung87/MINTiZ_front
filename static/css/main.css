@@ -57,9 +57,8 @@ body{
 #search-section{
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	text-align:center;
 }
-
 .search input{
 	width:430px;
 	height:30px;
@@ -94,28 +93,17 @@ body{
 #main-section{
 	float: left;
 	width:960px;
+}
+.post-image{
+	display: block; 
+	text-align:center;
+}
 
-}
-#introduction{
-	font-size:14px;
-			
-}
 #cross{
 	text-align:center;
 	font-size:20px;
 	font-weight:bolder;
 }
-#test_1{
-	color:lightskyblue;
-	font-weight: bold;
-
-}
-
-#test_2{
-	color:green;
-	font-weight: bold;
-}
-
 
 article{
 	padding:0 10px 20px 10px;
