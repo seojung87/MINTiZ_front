@@ -7,11 +7,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../css/test.css">
+    <link rel="stylesheet" type="text/css" href="../css/qna.css">
+    <link rel="stylesheet" type="text/css" href="../css/testanimation.css">
+    <link rel="stylesheet" type="text/css" href="../css/result.css">
 </head>
 
 <body>
 	<div class="content">
-        <section>
+        <section id="testmain">
             <h1>나의 민초력은?</h1>
             <div id="col-6 mx-auto">
                 <img src="../image/임시.png" alt="mainTestImg">
@@ -19,9 +22,44 @@
             <br>
             <p>
                 넣고싶은 텍스트
-            </p>       
-            <button type="button" class="btn-test">시작하기</button>
+            </p>
+            <a href="#" role="button" class="testBtn testBtn--basemint size_default" onclick="begin()">시작하기</a>         
+            <!--
+                <button type="button" class="testBtn testBtn--basemint size_default" onclick="begin()">시작하기</span></button>
+            -->          
         </section>
+
+        <section id="qna">
+            <div class="status">
+                <div class="statusBar"></div>
+            </div>
+            <div class="qBox my-5 py-3 mx-auto">
+
+            </div>
+            <div class="aBox">
+
+            </div>
+        </section>
+
+        <section id="result">
+            <h1>나의 민초력은?</h1>
+            <div class="resultname">
+
+            </div>
+            <div id="resultImg">
+                
+            </div>
+            <div class="resultDesc">
+
+            </div>
+            <br>
+            <p>
+                
+            </p>
+            <a href="#" role="button" onclick="begin()">공유하기</a> 
+        </section>
+        <script src="../js/testData.js"></script>
+        <script src="../js/test.js"></script>
 	</div>
 
 </body>
