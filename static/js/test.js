@@ -9,8 +9,8 @@ function calResult() {
     let correctNum = 0;
     var pointArray = [
         { name: '반민초단', value: 0, key: 0},
-        { name: '민초딩', value: 0, key: 1},
-        { name: '민초레벨2', value: 0, key: 2},
+        { name: '민초입문자', value: 0, key: 1},
+        { name: '민초딩', value: 0, key: 2},
         { name: '민초레벨3', value: 0, key: 3},
         { name: '민초레벨4', value: 0, key: 4},
         { name: '민초 마스터', value: 0, key: 5},
@@ -32,16 +32,19 @@ function calResult() {
             break;
         case 2:  resultArray = pointArray[2];
             break;
-        case 3:  resultArray = pointArray[3];
+        case 3:  resultArray = pointArray[2];
             break;
-        case 4:  resultArray = pointArray[4];
+        case 4:  resultArray = pointArray[3];
             break;
-        case 5:  resultArray = pointArray[5];
+        case 5:  resultArray = pointArray[3];
+            break;
+        case 6:  resultArray = pointArray[4];
+            break;
+        case 7:  resultArray = pointArray[5];
             break;
         default:
             break;
         }
-
     console.log(resultArray);
     let resultword = resultArray.key;
     return resultword;
@@ -54,10 +57,10 @@ function setResult() {
 
     var resultImg = document.createElement("img");
     const imgDiv = document.querySelector("#resultImg");
-    var imgURL = "image/testImg" + point + ".png";
+    var imgURL = "../image/testImg" + point + ".png";
     resultImg.src = imgURL;
     resultImg.alt = point;
-    //resultImg.classList.add("img-fluid");
+    resultImg.classList.add("img-fluid");
     imgDiv.appendChild(resultImg);
 
     const resultDesc = document.querySelector(".resultDesc");
