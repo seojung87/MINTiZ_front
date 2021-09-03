@@ -2,50 +2,50 @@ const qnaList = [
     {
       q: '1. 이 중 민초단이 아닌 연예인은?',
       a: [
-        { answer: 'a. 백종원', type: ['X'] },
-        { answer: 'b. 이동욱', type: ['X'] },
-        { answer: 'c. 김선호', type: ['O'] },
-        { answer: 'd. 박서준', type: ['X'] },
+        { answer: 'a. 백종원' },
+        { answer: 'b. 이동욱' },
+        { answer: 'c. 김선호' },
+        { answer: 'd. 박서준' },
       ],
       correct: '2'
     },
     {
       q: '2. 민초가 유래된 나라는?',
       a: [
-        { answer: 'a. 영국', type: ['O'] },
-        { answer: 'b. 프랑스', type: ['X'] },
-        { answer: 'c. 벨기에', type: ['X'] },
-        { answer: 'd. 미국', type: ['X'] },
+        { answer: 'a. 영국' },
+        { answer: 'b. 프랑스' },
+        { answer: 'c. 벨기에' },
+        { answer: 'd. 미국' },
       ],
       correct: '0'
     },
     {
       q: '3. 시중에서 파는 민초 음식이 아닌 것은?',
       a: [
-        { answer: 'a. 민트초코피자', type: ['X'] },
-        { answer: 'b. 민트초코볶음밥', type: ['O'] },
-        { answer: 'c. 민트초코파스타', type: ['X'] },
-        { answer: 'd. 민트초코돈까스', type: ['X'] },
+        { answer: 'a. 민트초코피자' },
+        { answer: 'b. 민트초코볶음밥' },
+        { answer: 'c. 민트초코파스타' },
+        { answer: 'd. 민트초코돈까스' },
       ],
       correct: '1'
     },
     {
       q: '4. 베스킨라빈스에서 출시된 민초 관련 제품이 아닌 것은?',
       a: [
-        { answer: 'a. 아이스 민트 초코파이', type: ['X'] },
-        { answer: 'b. 민트 초코칩 쿠키 샌드', type: ['X'] },
-        { answer: 'c. 아이스 민트 초코슈', type: ['O'] },
-        { answer: 'd. 민트 초코 치약', type: ['X' ] },
+        { answer: 'a. 아이스 민트 초코파이' },
+        { answer: 'b. 민트 초코칩 쿠키 샌드' },
+        { answer: 'c. 아이스 민트 초코슈' },
+        { answer: 'd. 민트 초코 치약' },
       ],
       correct: '2'
     },
     {
       q: '5. 민트 초코가 만들어지게 된 계기는?',
       a: [
-        { answer: 'a. 초코 공장에서 데코할 민트잎을 실수로 빠뜨렸는데 맛있어서', type: ['X'] },
-        { answer: 'b. 디저트 공모전에 출품하기 위해서', type: ['O']},
-        { answer: 'c. 이닦고 초콜릿을 먹다가 맛있어서', type: ['X'] },
-        { answer: 'd. 녹차인 줄 알고 섞었는데 민트였음', type: ['X'] },
+        { answer: 'a. 초코 공장에서 데코할 민트잎을 실수로 빠뜨렸는데 맛있어서' },
+        { answer: 'b. 디저트 공모전에 출품하기 위해서' },
+        { answer: 'c. 이닦고 초콜릿을 먹다가 맛있어서' },
+        { answer: 'd. 녹차인 줄 알고 섞었는데 민트였음' },
       ],
       correct: '1'
     },
@@ -53,20 +53,20 @@ const qnaList = [
     {
       q: '6. 오리온이 여름 한정으로 내놓은 민트초코과자 4종에 포함되어있지 않은 것은?',
       a: [
-        { answer: 'a. 민초 파이', type: ['X'] },
-        { answer: 'b. 민초 송이', type: ['X'] },
-        { answer: 'd. 민초 다이제', type: ['X'] },
-        { answer: 'c. 민초 쿠키', type: ['O'] },
+        { answer: 'a. 민초 파이' },
+        { answer: 'b. 민초 송이' },
+        { answer: 'd. 민초 다이제' },
+        { answer: 'c. 민초 쿠키' },
       ],
       correct: '3'
     },
     {
       q: '7. 민트초코 우유를 출시하지 않은 브랜드는?',
       a: [
-        { answer: 'a. 서울우유', type: ['X'] },
-        { answer: 'b. 매일우유', type: ['X'] },
-        { answer: 'c. 빙그레', type: ['O'] },
-        { answer: 'd. 덴마크', type: ['X'] },
+        { answer: 'a. 서울우유' },
+        { answer: 'b. 매일우유' },
+        { answer: 'c. 빙그레' },
+        { answer: 'd. 덴마크' },
       ],
       correct: '2'
     }

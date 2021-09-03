@@ -23,6 +23,20 @@ img{
     font-size: 20px;
 }
 
+.next{
+    color: white;
+    background-color: var(--mintiz-brown);
+    padding: 5px 10px;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 20px;
+}
+  
+.next:hover, .next:focus {
+    background-color: whitesmoke;
+    color: var(--mintiz-brown);
+}
+
 .kakao{
     color: white;
     background-color: var(--mintiz-brown);
@@ -30,9 +44,9 @@ img{
     font-size: 20px;
     border: 0px;
     border-radius: 20px;
-  }
-  
-  .kakao:hover, .kakao:focus {
+}
+    
+.kakao:hover, .kakao:focus {
     background-color: whitesmoke;
     color: var(--mintiz-brown);
-  }
+}
