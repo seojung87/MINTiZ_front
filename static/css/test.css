@@ -2,13 +2,20 @@
 	--mintiz-mint: #BDE4DC;
 	--mintiz-brown: #817171;
 }
+@font-face {
+    font-family: 'Y_Spotlight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 *{
-    font-family: 'Hi Melody', cursive;
+    font-family: 'Y_Spotlight', cursive;
 }
 
 body{
-	width:600px; margin: 20px auto;
+	width:650px; margin: 20px auto;
+    align-items: center;
 	background:var(--mintiz-mint);
 }
 
