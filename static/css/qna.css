@@ -9,10 +9,11 @@
 
 .qBox{
     background-color: whitesmoke;
+    display: block;
     text-align: center;
-    width: 100%;
+    width: 90%;
     margin: 40px auto;
-    padding: 20px auto;
+    padding: 15px ;
     border-radius: 20px;
     font-size: 24px;
 }
@@ -21,9 +22,10 @@
     background-color: whitesmoke;
     border-radius: 20px;
     display: block;
-    width: 100%;
+    width: 90%;
+    height: 120%;
     margin: 20px auto;
-    padding: 20px auto;
+    padding: 20px ;
     border: 0px;
     font-size: 18px;
 }
@@ -42,8 +44,8 @@
 .statusBar{
     height: 100%;
     border-radius: 20px;
-    background: #febbbb;
-    background: -moz-linear-gradient(top, #febbbb 0%, #fe9090 52%, #ff5c5c 100%);
-    background: -webkit-linear-gradient(top, #febbbb 0%, #fe9090 52%, #ff5c5c 100%);
-    background: linear-gradient(to bottom, #febbbb 0%, #fe9090 52%, #ff5c5c 100%);
+    background: #817171;
+    background: -moz-linear-gradient(top, #817171 0%, #756767 52%, #665a5a 100%);
+    background: -webkit-linear-gradient(top, #817171 0%, #756767  52%, #665a5a 100%);
+    background: linear-gradient(to bottom, #817171  0%, #756767 52%, #665a5a 100%);
     }
