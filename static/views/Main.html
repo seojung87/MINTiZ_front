@@ -23,11 +23,11 @@
 			</form>
 		</div>
 		<div class="tag">
-			<button><i class="tag1"></i><span>#일상</span>
+			<button><i class="tag1"></i><span># 일상</span>
 			</button>
-			<button><i class="tag2"></i><span>#맛집 후기</span>
+			<button><i class="tag2"></i><span># 맛집 후기</span>
 			</button>
-			<button><i class="tag3"></i><span>#추천</span>
+			<button><i class="tag3"></i><span># 추천</span>
 			</button>
 		</div>
 		</section>
@@ -36,25 +36,66 @@
 	<!--콘텐츠를 감싸는 태그-->
 	<div id="content">
 		<section id="main-section" >
-				<!--for문 써서 db에서 받아오기-->
-			<article>
-				<div class="post-image">				
-					<img id="postImg" src="../image/임시.png" width='300' height='300'/>
-				</div>
-				<div class="post-text">									
-					<p>핳ㅎ하ㅏ하핳하하하핳ㅎ하 *^^*</p>
- 				</div>
-			</article>
+                <article class="contents">
+                    <header class="top">
+                        <div class="user_container">
+                            <div class="profile_img">
+                                <img src="../image/임시.png" alt="프로필이미지">
+                            </div>
+                            <div class= "profile-container">
+                                <div class="nick_name m_text">Minnie</div>
+                                <div class="country s_text">Seoul, South Korea</div>
+                            </div>
 
-			<article>
-				<div class="article-header">
+                        </div>
 
-				</div>
-			</article>
+                        <div class="sprite_more_icon" data-name="more">
+                            <ul class="toggle_box">
+                                <li class="s_text">수정</li>
+                                <li class="s_text">삭제</li>
+                            </ul>
+                        </div>
+                    </header>
+
+                    <div class="img_section">
+                        <div>
+                            <div><img src="../image/testImg0.png"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div> 민초 마싯땅 </div>
+                    </div>
+
+                    <div>
+                        <div class="timer">1시간 전</div>
+                    </div>
+
+                    <!--북마크, 댓글-->
+                    <div class="user_container">
+                        <div class="bookmark_img">
+                            <img src="../image/clicked_star.png" alt="북마크이미지">
+                        </div>
+                        <div class="comment_img">
+                            <img src="../image/comment.png" alt="댓글이미지">
+                        </div>
+
+                    </div>
+
+
+
+                </article>
+
+                
+
+
 				
 		</section>
 
+
 	</div>
+
+    
 	
 </body>
 </html>
