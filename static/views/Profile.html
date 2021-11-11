@@ -2,30 +2,67 @@
 <html>
 <head>
 	<title>Profile</title>
-	<script type="text/javascript"></script>
+	<script type="text/javascript" src="../js/calendar.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/basic.css">
 	<link rel="stylesheet" type="text/css" href="../css/profile.css">
+	<link rel="stylesheet" type="text/css" href="../css/calendar.css">
 </head>
 
 <body>
 	<div id="page-wrapper">
 		<!--고정 헤더-->
 		<header id="main-header">
-			<hgroup>			
+			<hgroup align="center">	
 				<h1 align="center"class="master-title">MINTiZ</h1>
 		    </hgroup>
 		</header>
 	</div>
 
 	<div id="content">
-		<h2>회원 프로필</h2>
-		<img id="img1" src="임시.png" width='50' height='50'/>
-		닉네임
-		<br>
-		레벨
-		<hr>
-		<h3>작성글 목록</h3>
-		<hr>
-		<h3>민초 잔디밭</h3>
+
+		<!--회원 정보-->
+		<div class = "title"> 회원 정보 </div>
+
+		<div class = "body-layout">
+
+			<table width = 300 height = 100>
+				<tr>
+				  <th rowspan="3"><img id="img1" src="../image/임시.png" width='80' height='80'/></th>
+				  <td><b>LV.&nbsp;&nbsp</b>
+					  <label>민초 타노스</label>
+				  </td>
+				</tr>
+				<tr>
+					<td><b>이름 &nbsp</b>
+						<label>영현님</label>
+						<!--
+						<input class="input-layout" type="text" value="이름" readonly>
+						-->
+					</td>
+				</tr>
+				<tr>
+					<td><b>이메일 </b>
+						<label> hello@hello.com</label>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<!--캘린더-->
+
+        <div class="mint-calendar-font">Mint Day</div>
+        <div class="layout">
+            <table class = "mint-calendar" id="calendar" align="center">
+                <tr>
+                    <td class="calendar-font"><label onclick="beforem()" id="before" ></label></td>
+                    <td colspan="5" id="yearmonth"></td>
+                    <td class="calendar-font" ><label onclick="nextm()" id="next"></label></td>
+                </tr>
+
+            </table>
+        </div>
+        <script src="../js/profile.js"></script>
 	</div>
 </body>
 </html>
+
