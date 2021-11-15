@@ -16,26 +16,31 @@
 		</header>
 	</div>
 
-	<section class="login-input-section-wrap">
-		<form name="login" method="POST"> 
+	<section class="join-input-section-wrap">
+		<form name="join_form" method="POST"> 
             <div class="login-name"> 이메일 </div>
 			<div class="login-input-wrap">
-				<input placeholder="이메일을 입력해주세요" type="email"></input>
+				<input id="set_email" placeholder="이메일을 입력해주세요" type="email"></input>
 			</div>
             <div class="login-name"> 이름 </div>
-			<div class="login-input-wrap password-wrap"> 	
-				<input placeholder="이름을 입력해주세요" type="text"></input>
+			<div class="login-input-wrap"> 	
+				<input id="set_name" placeholder="이름을 입력해주세요" type="text"></input>
 			</div>
             <div class="login-name"> 아이디 </div>
-			<div class="login-input-wrap password-wrap"> 	
-				<input placeholder="아이디를 입력해주세요" type="text"></input>
+			<div class="login-input-wrap"> 	
+				<input id="set_id" placeholder="아이디를 입력해주세요" type="text"></input>
+				<button id="id_button" onclick="id_check()">중복확인</button>
 			</div>
             <div class="login-name"> 비밀번호 </div>
-			<div class="login-input-wrap password-wrap"> 	
-				<input placeholder="비밀번호를 입력해주세요" type="password"></input>
+			<div class="login-input-wrap"> 	
+				<input id="set_pw" placeholder="비밀번호를 입력해주세요" type="password"></input>
+			</div>
+			<div class="login-name"> 비밀번호 확인</div>
+			<div class="login-input-wrap"> 	
+				<input id="check_pw" placeholder="비밀번호를 입력해주세요" type="password"></input>
 			</div>
 			<div class="login-button-wrap">
-				<button>Sign up</button>
+				<button onclick="joinform_check();">Sign up</button>
 			</div>
 		
 		</form>
