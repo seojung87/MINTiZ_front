@@ -41,7 +41,7 @@
 				<div class="slide">
 					<img src="../image/writingdetails1.jpg" alt=""></div>
 				<div class="nav">
-				  <label for="img-6" class="prev">&#x2039;</label>
+				  <label for="img-1" class="prev">&#x2039;</label>
 				  <label for="img-2" class="next">&#x203a;</label>
 				</div>
 				</li>
@@ -62,7 +62,7 @@
 						<img src="../image/writingdetails3.jpg" alt=""></div>
 				<div class="nav">
 				  <label for="img-2" class="prev">&#x2039;</label>
-				  <label for="img-4" class="next">&#x203a;</label>
+				  <label for="img-3" class="next">&#x203a;</label>
 				</div>
 				</li>
 			
@@ -91,6 +91,7 @@
 
 			<!--작성 글-->
 			<div class="writing">
+				<!--게시글 작성 부분 js 가져와야함-->
 				민트 초코 케이크 간단 후기!!!!!<br>
 				내가 예상한 민트 초코맛보다 조금 덜해서 아쉬움<br>
 				민초단이 아닌 사람들에게도 부담스럽지 않아 취향 저격 가능할 듯<br>
@@ -109,14 +110,6 @@
 							<img id="bookmark" src="../image/btn-2.jpg"  width='15' height='15'>
 						</button>
 					  </th>
-					  <td><b><button class="sharing" type="button">
-						  <img id="sharing" src="../image/btn-3.jpg"  width='15' height='15'>
-						</button></b>
-					  </td>
-					  <td><b><button class="pencil" type="button">
-						<img id="pencil" src="../image/btn-1.jpg"  width='15' height='15'>
-					  </button></b>
-					  </td>
 					  <td><b><button class="trash" type="button">
 						<img id="trash" src="../image/btn-4.jpg"  width='15' height='15'>
 					  </button></b>
@@ -125,6 +118,7 @@
 				</table>
 			</div>
 
+			<!--
 			<div class = "comments">
 				<hr align="center" color="#9b9090">
 				<div id="form-commentInfo"> 
@@ -133,10 +127,54 @@
 						<input id="comment-input" placeholder="댓글을 입력해 주세요."> 
 						<button id="submit">등록</button> 
 					</div> 
-					<div id=comment> </div> 
-					<script src="index.js"></script>
+					<div id= comment> </div> 
+					<script src="writingdetails.js"></script>
 			</div>
+		    -->
+			
 
+			<div class = "comments">
+				<hr align="center" color="#9b9090">
+				<div id="form-commentInfo" class = "comment-row"> 
+					<div id="comment-count">댓글 
+						<span id = "comments-count">2</span>
+						<div class = "comment-row">
+							<textarea id = "comment-input" name = "comment-input" row=5 placeholder="댓글을 입력해 주세요."></textarea>		
+							<button type ="button" id="submit" onclick=	"submitComment()">등록</button>			
+						</div> 
+						<div class = "comment-row"> 
+							<div class="comment-date">2021-11-17 10:16</div>
+							<div class="comment-content">Comment1</div>
+						</div>
+						<div class = "comment-row"> 
+							<div class="comment-date">2021-11-18 1:16</div>
+							<div class="comment-content">Comment2</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+			<!--
+			<div class = "comments">
+				<hr align="center" color="#9b9090">
+				<div id="comment-head" class = "comment-row"> 
+					<span id = "comments-count">2</span>
+				</div>
+				<div class = "comment-row">
+					<textarea id = "comment-input" name = "comment-input" row=5 placeholder="댓글을 입력해 주세요."></textarea>		
+					<button type ="button" id="submit" onclick=	"submitComment()">등록</button>			
+				</div> 
+				<div class = "comment-row"> 
+					<div class="comment-date">2021-11-17 10:16</div>
+					<div class="comment-content">Comment1</div>
+				</div>
+				<div class = "comment-row"> 
+					<div class="comment-date">2021-11-18 1:16</div>
+					<div class="comment-content">Comment2</div>
+				</div>
+			</div>
+			-->
 		</div>
 
 	</div>
