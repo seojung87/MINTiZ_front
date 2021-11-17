@@ -91,13 +91,15 @@
 
 			<!--작성 글-->
 			<div class="writing">
-				<!--게시글 작성 부분 js 가져와야함-->
+				<form name="writing-form" method="GET">
+					<!--게시글 작성 부분 js 가져와야함-->
 				민트 초코 케이크 간단 후기!!!!!<br>
 				내가 예상한 민트 초코맛보다 조금 덜해서 아쉬움<br>
 				민초단이 아닌 사람들에게도 부담스럽지 않아 취향 저격 가능할 듯<br>
                 크림이 엄청 많아서 먹다보면 좀 느끼해서 물릴 수도 있을 것 같다.<br>
 				부드러운 빵시트가 시원하고 상쾌한 민트 크림이랑 전체적으로 잘 어울림<br>
 				별 4개 ★★★★☆
+				</form>
 			</div>
 
 			<!--글 북마크, 공유-->
@@ -140,8 +142,10 @@
 					<div id="comment-count">댓글 
 						<span id = "comments-count">2</span>
 						<div class = "comment-row"> 
-							<input id = "comment-input" name = "comment-input" placeholder="댓글을 입력해 주세요."></input>
-						    <button id="submit_btn" name="submit_btn" onclick="submitComment()">등록</button>
+							<form role="form" method="post">
+								<textarea id = "comment-input" name = "comment-input" placeholder="댓글을 입력해 주세요."></textarea>
+								<button id="submit_btn" name="submit_btn">등록</button>
+							</form>
 						</div>			
 						<div class = "comment-row"> 
 							<table width = 300 height = 50>
