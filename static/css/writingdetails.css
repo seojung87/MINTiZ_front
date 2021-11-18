@@ -82,7 +82,24 @@ body{
 .interaction{
     float: right;
 }
-
+#bookmark_btn{
+    padding: 0;
+    border: none;
+    background: none;
+}
+#trash_btn{
+    padding: 0;
+    margin-left: 3px;
+    margin-right: 3px;
+    border: none;
+    background: none;
+}
+#rewrite_btn{
+    padding: 0;
+    margin-left: 3px;
+    border: none;
+    background: none;
+}
 /* 댓글 레이아웃 */
 #form-commentInfo{
     width: 100%; 

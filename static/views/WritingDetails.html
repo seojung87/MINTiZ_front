@@ -87,6 +87,31 @@
 						</td>
 					</tr>
 				</table>
+
+				<!--글 북마크, 삭제, 공유-->
+				<div class="interaction">
+
+					<table width = 20 height = 10>
+						<tr>
+						  <th rowspan="1">
+							<button id="bookmark_btn" onclick="bookmark()">
+								<img id="bookmark" src="../image/star.png" width='27' height='27'>
+							</button>
+						  </th>
+						  <td><button id="rewrite_btn">
+							<img id="rewrite" src="../image/rewrite.jpg"  width='27' height='27'>
+						  </button>
+						  </td>
+						  <td><button id="trash_btn">
+							<img id="trash" src="../image/btn-4.jpg"  width='25' height='25'>
+						  </button>
+						  </td>
+
+						</tr>
+					</table>
+
+			    </div>
+				
 			</div>
 
 			<!--작성 글-->
@@ -102,23 +127,7 @@
 				</form>
 			</div>
 
-			<!--글 북마크, 공유-->
-			<div class="interaction">
-
-				<table width = 20 height = 10>
-					<tr>
-					  <th rowspan="1">
-						<button class="bookmark" type="button">
-							<img id="bookmark" src="../image/btn-2.jpg"  width='15' height='15'>
-						</button>
-					  </th>
-					  <td><b><button class="trash" type="button">
-						<img id="trash" src="../image/btn-4.jpg"  width='15' height='15'>
-					  </button></b>
-					  </td>
-					</tr>
-				</table>
-			</div>
+		
 
 			<!--
 			<div class = "comments">

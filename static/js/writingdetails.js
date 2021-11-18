@@ -1,3 +1,8 @@
+function bookmark(){
+    document.getElementById("bookmark").src = "../image/clicked_star.png";
+}
+
+
 /*
 // 댓글 기능
 const inputBar = document.querySelector("#comment-input"); 
