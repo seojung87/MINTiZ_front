@@ -26,7 +26,7 @@
 		<nav class="categories">
 			<ol>
 				<li class="category"><a href="#">카페 후기</a></li>
-				<li class="category"><a href="#"><img id="place" src="../image/category_place.jpg" width='20' height='20'/>경기도</a></li>
+				<li class="category"><a href="#">경기도</a></li>
 				<li class="category">케이크</li>
 			</ol>
 		</nav>
@@ -79,45 +79,39 @@
 				<table width = 20 height = 10>
 					<tr>
 					  <th rowspan="2"><img id="profile_img" src="../image/임시.png" width='50' height='50'/></th>
-					  <td><b><div class="writer_name">Younghyun</div></b>
+					  <td><b><span id="writer_name">Younghyun</div></b>
 					  </td>
 					</tr>
 					<tr>
-						<td><b><div class="write_date">2021.11.11</div></b>
+						<td><b><span id="write_date">2021.11.11</div></b>
 						</td>
 					</tr>
 				</table>
 
 				<!--글 북마크, 삭제, 공유-->
 				<div class="interaction">
-
-					<table width = 20 height = 10>
-						<tr>
-						  <th rowspan="1">
-							<button id="bookmark_btn" onclick="bookmark()">
-								<img id="bookmark" src="../image/star.png" width='27' height='27'>
+					
+						<span class = "control hidden" id = "control_id{{ forloop.counter0 }}">
+							<button id="rewrite_btn"> <!--onclick="location.href='수정페이지.html'"-->
+								<img id="rewrite" src="../image/rewrite.jpg" width='25' height='25' alt="수정">
 							</button>
-						  </th>
-						  <td><button id="rewrite_btn">
-							<img id="rewrite" src="../image/rewrite.jpg"  width='27' height='27'>
-						  </button>
-						  </td>
-						  <td><button id="trash_btn">
-							<img id="trash" src="../image/btn-4.jpg"  width='25' height='25'>
-						  </button>
-						  </td>
-
-						</tr>
-					</table>
-
-			    </div>
-				
+							<button id="trash_btn" onclick="return confirm('정말 삭제하시겠습니까?')"> 
+								<img id="trash" src="../image/btn-4.jpg"  width='25' height='25' alt="삭제">
+							</button>
+						</span>
+					    <span>
+							<button id="bookmark_btn" onclick="bookmark()">
+								<img id="bookmark" src="../image/star.png" width='27' height='27' alt="북마크">
+							</input>
+						</span>
+				</div>
 			</div>
+
 
 			<!--작성 글-->
 			<div class="writing">
 				<form name="writing-form" method="GET">
-					<!--게시글 작성 부분 js 가져와야함-->
+					<!--게시글 작성 부분 가져와야함-->
 				민트 초코 케이크 간단 후기!!!!!<br>
 				내가 예상한 민트 초코맛보다 조금 덜해서 아쉬움<br>
 				민초단이 아닌 사람들에게도 부담스럽지 않아 취향 저격 가능할 듯<br>
@@ -194,6 +188,8 @@
 		</div>
 
 	</div>
+
 </body>
-</html>
+
+
 
