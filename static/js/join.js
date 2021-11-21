@@ -1,3 +1,18 @@
+// 레벨 값 get
+// http://127.0.0.1/signup/?level=0 일 경우
+
+function getParameterByLevel(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+document.getElementById('level').value = getParameterByLevel("level");
+
+
+
+
 // 유효성 검사
 function joinform_check(){
     var set_email = document.getElement("set_email");

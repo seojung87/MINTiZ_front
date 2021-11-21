@@ -17,11 +17,13 @@
 	</div>
 
 	<section class="join-input-section-wrap">
-		<form name="join_form" method="POST"> 
+		<form name="join_form" method="GET"> 
 			<div class="login-name"> 레벨 </div>
 			<div class="login-input-wrap">
-				<input id="level" name="level" placeholder= request.getParameter(“level”)></input>
+				<input id="level" name="level" value="" type="text" readonly></input>
 			</div>
+		</form>
+		<form name="join_form" method="POST"> 
             <div class="login-name"> 이메일 </div>
 			<div class="login-input-wrap">
 				<input id="set_email" name="set_email" placeholder="이메일을 입력해주세요" type="email"></input>
