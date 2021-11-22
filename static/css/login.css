@@ -98,3 +98,21 @@ body{
 .google-sign-in button i{
 	font-size: 20px;
 }
+#findId{
+	border-top: white;
+	border-left: white;
+	border-bottom: white;
+	border-right: 1px solid black;
+	background: white;
+}
+#findPw{
+	border-top: white;
+	border-left: white;
+	border-bottom: white;
+	border-right: 1px solid black;
+	background: white;
+}
+#join{
+	border: none;
+	background: white;
+}
