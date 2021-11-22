@@ -27,14 +27,6 @@ body{
 .password-wrap{
 	margin-top: 5px;
 }
-.level-input-wrap input{
-	border: none;
-	width:380px;
-	margin-top: 10px;
-	font-size: 14px;
-	height:40px;
-	border: solid 1px var(--border-gray-color);
-}
 .login-input-wrap input{
 	border: none;
 	width:430px;
